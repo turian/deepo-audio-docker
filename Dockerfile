@@ -103,6 +103,9 @@ RUN pip install --upgrade mpi4py torch torchvision av
 
 RUN pip install --upgrade soundfile wandb samplerate resampy auraloss nnAudio pytorch-lightning
 
+# Speech eval
+RUN pip install pystoi pesq git+https://github.com/turian/speechmetrics@pesq#egg=speechmetrics
+
 # TODO: APEX?
 
 # I'm not sure we actually want this
