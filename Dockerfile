@@ -65,11 +65,11 @@ ENV LANG C.UTF-8
 # workaround readline fallback
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections && apt-get install -y -q
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		libbluetooth-dev \
-		tk-dev \
-		uuid-dev \
-	&& rm -rf /var/lib/apt/lists/*
+#RUN apt-get update && apt-get install -y --no-install-recommends \
+#		libbluetooth-dev \
+#		tk-dev \
+#		uuid-dev \
+#	&& rm -rf /var/lib/apt/lists/*
 
 RUN apt-get update
 RUN apt-get dist-upgrade -y
