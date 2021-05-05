@@ -90,6 +90,9 @@ RUN apt-get install -y vim less bc man man-db manpages psmisc screen zip unzip s
 RUN apt-get update \
     && apt-get install -y portaudio19-dev
 
+# Upgrade pip
+RUN python3 -m pip install --upgrade pip
+
 # spotty requirements
 RUN pip install --upgrade PyYAML schema chevron botocore boto3 pycurl
 
