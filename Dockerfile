@@ -108,6 +108,9 @@ RUN pip install --upgrade pystoi pesq speechmetrics
 
 RUN pip install --upgrade linear_attention_transformer
 
+# For some image GANs
+RUN pip install --upgrade torchvision dominate visdom packaging GPUtil
+
 # TODO: APEX?
 
 # I'm not sure we actually want this
