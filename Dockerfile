@@ -109,6 +109,7 @@ RUN pip install --upgrade soundfile wandb samplerate resampy auraloss nnAudio py
 # Speech eval
 # Not working right now :\
 #RUN pip install --upgrade pystoi pesq speechmetrics
+RUN pip install --upgrade git+https://github.com/aliutkus/speechmetrics#egg=speechmetrics[gpu]
 
 RUN pip install --upgrade linear_attention_transformer
 
