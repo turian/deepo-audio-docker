@@ -107,7 +107,8 @@ RUN pip install --upgrade mpi4py torch torchvision av
 RUN pip install --upgrade soundfile wandb samplerate resampy auraloss nnAudio pytorch-lightning
 
 # Speech eval
-RUN pip install --upgrade pystoi pesq speechmetrics
+# Not working right now :\
+#RUN pip install --upgrade pystoi pesq speechmetrics
 
 RUN pip install --upgrade linear_attention_transformer
 
