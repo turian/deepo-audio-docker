@@ -79,6 +79,7 @@ RUN apt-get install -y \
 	libopenmpi-dev \
 	openmpi-bin \
 	libsndfile1 \
+	libsndfile1-dev \
 	libavdevice-dev \
 	libavfilter-dev \
 	ssh
