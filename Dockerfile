@@ -122,6 +122,8 @@ RUN pip install --upgrade torchvision dominate visdom packaging GPUtil
 # I'm not sure we actually want this
 RUN apt-get install -y python3-tk 
 
+RUN apt-get install -y python3-venv
+
 RUN apt-get install -y mlocate \
     && updatedb
 
