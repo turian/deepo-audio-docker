@@ -119,6 +119,8 @@ RUN pip install --upgrade torchvision dominate visdom packaging GPUtil
 
 RUN pip install --upgrade umap-learn sounddevice Unidecode inflect PyQt5 webrtcvad
 
+RUN pip install --upgrade click fire
+
 # TODO: APEX?
 
 # I'm not sure we actually want this
