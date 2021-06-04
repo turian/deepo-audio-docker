@@ -117,6 +117,8 @@ RUN pip install --upgrade linear_attention_transformer
 # For some image GANs
 RUN pip install --upgrade torchvision dominate visdom packaging GPUtil
 
+RUN pip install --upgrade umap-learn sounddevice Unidecode inflect PyQt5 webrtcvad
+
 # TODO: APEX?
 
 # I'm not sure we actually want this
@@ -124,11 +126,12 @@ RUN apt-get install -y python3-tk
 
 RUN apt-get install -y python3-venv
 
-RUN apt-get install -y mlocate \
-    && updatedb
+RUN apt-get install -y mlocate
 
 # Clean deps
 RUN apt-get clean \
     && rm -rf /var/lib/apt/lists/*
+
+RUN updatedb
 
 #EXPOSE 6006
